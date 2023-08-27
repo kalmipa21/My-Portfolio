@@ -1,0 +1,5 @@
+.bg__image__main {
+  background-image: url("../images/moroccan-flower.png") !important;
+  background-repeat: repeat;
+  background-position: center;
+}
