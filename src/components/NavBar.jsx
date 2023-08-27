@@ -9,28 +9,34 @@ export default function NavBar() {
     else return pathname.includes(target);
   }
   return (
-    <Navbar className=" bg-primary-subtle" variant="light">
+    <Navbar expand="md" className="bg-primary-subtle" variant="light">
       <Container>
         <Navbar.Brand href="#home">
           <h2 className=" p-0 m-0">Portfolio</h2>
         </Navbar.Brand>
-        <Nav className="ms-auto">
-          <NavLink to="/" className={isActive("Home") ? "active" : "link mx-3"}>
-            Home
-          </NavLink>
-          <NavLink
-            to="/news"
-            className={isActive("About") ? "active mx-3" : "link mx-3"}
-          >
-            News
-          </NavLink>
-          <NavLink
-            to="/project"
-            className={isActive("News") ? "active mx-3" : "link mx-3"}
-          >
-            Project
-          </NavLink>
-        </Nav>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto">
+            <NavLink
+              to="/"
+              className={isActive("Home") ? "active" : "link mx-3"}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/news"
+              className={isActive("About") ? "active mx-3" : "link mx-3"}
+            >
+              News
+            </NavLink>
+            <NavLink
+              to="/project"
+              className={isActive("News") ? "active mx-3" : "link mx-3"}
+            >
+              Web Projects
+            </NavLink>
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
