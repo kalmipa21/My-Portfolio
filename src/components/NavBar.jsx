@@ -9,7 +9,7 @@ export default function NavBar() {
     else return pathname.includes(target);
   }
   return (
-    <Navbar expand="md" className="bg-primary-subtle" variant="light">
+    <Navbar expand="md" className="bg-primary-subtle border" variant="light">
       <Container>
         <Navbar.Brand href="#home">
           <h2 className=" p-0 m-0">Portfolio</h2>
