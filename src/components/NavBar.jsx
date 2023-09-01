@@ -9,14 +9,14 @@ export default function NavBar() {
     else return pathname.includes(target);
   }
   return (
-    <Navbar expand="md" className="bg-primary-subtle border" variant="light">
+    <Navbar expand="md" className="bg-transparent" variant="light">
       <Container>
         <Navbar.Brand href="#home">
-          <h2 className=" p-0 m-0">Portfolio</h2>
+          <h1 className=" p-0 m-0 titleNavbar">.Portfolio</h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="ms-auto navbar-link">
             <NavLink
               to="/"
               className={isActive("Home") ? "active" : "link mx-3"}
@@ -24,16 +24,23 @@ export default function NavBar() {
               Home
             </NavLink>
             <NavLink
-              to="/news"
-              className={isActive("About") ? "active mx-3" : "link mx-3"}
+              to="/about"
+              className={isActive("About") ? "active" : "link mx-3"}
             >
-              News
+              About
             </NavLink>
+
             <NavLink
-              to="/project"
-              className={isActive("News") ? "active mx-3" : "link mx-3"}
+              to="/projects"
+              className={isActive("Projects") ? "active mx-3" : "link mx-3"}
             >
               Web Projects
+            </NavLink>
+            <NavLink
+              to="/contacts"
+              className={isActive("Contacts") ? "active mx-3" : "link mx-3"}
+            >
+              Contacts
             </NavLink>
           </Nav>
         </Navbar.Collapse>

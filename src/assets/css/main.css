@@ -1,5 +1,373 @@
-.bg__image__main {
-  background-image: url("../images/moroccan-flower.png") !important;
-  background-repeat: repeat;
+/************ Default Css ************/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #f3f5f8 !important;
+  color: #3d535f;
+  font-family: "Centra", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+h1,
+h2 {
+  font-family: "Poppins" !important;
+  font-weight: 900;
+  color: #3d535f;
+}
+h3,
+h4 {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #7f00ff;
+}
+h5,
+h6 {
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #7f00ff;
+}
+
+.navbar-link {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+p,
+a,
+li,
+button,
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #7f00ff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+/************ Banner Css ************/
+.banner {
+  margin-top: 0;
+  margin-top: 50px;
+}
+.descriptiontxt {
+  position: relative;
+}
+.descriptiontxt::before {
+  content: "";
+  position: absolute;
+  right: 100px;
+  width: 500px;
+  height: 200px;
+  background-image: url("../images//long-watercolor-yellow-brush-stroke-in-vector-PhotoRoom.png-PhotoRoom.png");
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
+  animation: banner 6s linear infinite;
+}
+@keyframes banner {
+  0% {
+    transform: rotate(5deg) skewY(5deg);
+  }
+  50% {
+    transform: rotate(-5deg) skewY(-5deg);
+  }
+  100% {
+    transform: rotate(5deg) skewY(5deg);
+  }
+}
+
+.banner .tagline {
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(
+    90.21deg,
+    rgb(243, 245, 248, 1) -5.91%,
+    rgb(204, 249, 2) 130.58%
+  );
+  color: #3d535f;
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.banner h1 {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+.banner p {
+  color: #3d535f;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+}
+.banner button {
+  color: #3d535f;
+  background: linear-gradient(
+    90.21deg,
+    rgb(243, 245, 248, 1) -5.91%,
+    rgb(204, 249, 2) 130.58%
+  );
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  border-color: #f3f5f8;
+  display: flex;
+  align-items: center;
+}
+.banner button:hover {
+  background: #3d535f;
+  color: linear-gradient(
+    90.21deg,
+    rgb(243, 245, 248, 1) -5.91%,
+    rgb(204, 249, 2) 130.58%
+  );
+  border-color: #f3f5f8;
+}
+.banner button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+.banner button:hover svg {
+  margin-left: 70px;
+}
+.banner .imgBanner img {
+  animation: updown 3s linear infinite;
+  border-radius: 50%;
+  position: relative;
+  border-radius: 50%;
+  background-image: radial-gradient(
+    farthest-corner at 30% 150%,
+    rgb(204, 249, 2),
+    rgb(243, 245, 248)
+  );
+}
+.imgBanner {
+  position: relative;
+}
+.imgBanner::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 100px;
+  right: -70px;
+  position: absolute;
+  border-radius: 50% 50% 0 50%;
+  background-color: #7f00ff;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #3d535f;
+  color: #7f00ff;
+}
+
+/* ABOUT PAGE */
+.image__Profile {
+  width: 150px;
+  height: 200px;
+}
+
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.skill-slider .item img {
+  width: 30%;
+}
+.subkotak {
+  width: auto;
+  background: linear-gradient(
+    90.21deg,
+    rgb(243, 245, 248, 1) -5.91%,
+    rgb(204, 249, 2) 130.58%
+  );
+  position: relative;
+  border-radius: 10px;
+  top: -20px;
+}
+.timeline {
+  list-style: none;
+  padding: 0.5rem;
+  margin-left: 1.5rem;
+  margin-right: 0rem;
+  position: relative;
+}
+.timeline::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 1px;
+  background-color: #3d535f;
+}
+.timeline li {
+  position: relative;
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+.timeline li::before,
+.timeline li::after {
+  content: "";
+  display: table;
+}
+.timeline li::after {
+  clear: both;
+}
+.timeline li .timeline-image img {
+  width: 160px;
+  height: 160px;
+  background-color: #ff0000;
+  position: absolute;
+  transform: translateX(-20%);
+  border-radius: 40%;
+  border: 50px;
+  border-color: #ff0000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.timeline li .timeline-panel {
+  width: calc((100% - 200px));
+  float: right;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  position: relative;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .descriptiontxt::before {
+    top: 10px;
+    right: 50px;
+  }
+}
+@media (max-width: 992px) {
+  .descriptiontxt::before {
+    top: 30px;
+    right: 50px;
+    width: 400px;
+    height: 150px;
+  }
+  .banner p {
+    font-size: 14px;
+  }
+  .banner h1 {
+    font-size: 30px;
+  }
+  .timeline li .timeline-panel {
+    width: calc(100% - 100px);
+    transform: translateX(10px);
+  }
+  .timeline li .timeline-image img {
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 768px) {
+  .imgBanner img {
+    width: 50%;
+    height: auto;
+    left: 25%;
+    z-index: 10;
+  }
+  .imgBanner::before {
+    content: "";
+    top: 350px;
+    left: -5px;
+  }
+  .descriptiontxt::before {
+    width: 400px;
+    height: 150px;
+    top: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .imgBanner img {
+    z-index: 100;
+  }
+  .banner p {
+    font-size: 10px;
+  }
+  .banner h1 {
+    font-size: 20px;
+  }
+  .imgBanner::before {
+    width: 20px;
+    height: 20px;
+    top: 370px;
+    left: 25px;
+  }
+  .descriptiontxt::before {
+    width: 300px;
+    top: -10px;
+  }
+  .timeline li .timeline-image img {
+    width: 65px;
+    height: 65px;
+  }
+  .timeline li .timeline-panel {
+    width: calc(100% - 100px);
+    transform: translateX(-70px);
+  }
+  .timeline li .timeline-panel::before {
+    top: 30px;
+  }
+  .timeline li .timeline-panel::after {
+    top: 31px;
+  }
+  .timeline-heading {
+    font-size: 12px;
+    font-weight: 600;
+  }
 }

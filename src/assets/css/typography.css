@@ -1,3 +1,20 @@
+/************ Custom Font ************/
+@font-face {
+  font-family: Poppins;
+  src: url("../font/Poppins-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("../font/Poppins-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("../font/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+
 /* Heading or tittle*/
 .heading__1 {
   font-size: 2rem;

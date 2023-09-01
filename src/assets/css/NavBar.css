@@ -1,13 +1,17 @@
 .link {
   text-decoration: none;
-  color: blue;
+  color: #7f00ff;
 }
 .link:hover {
-  color: darkblue;
+  color: #3d535f;
 }
 
 .active,
 .active:hover {
   font-weight: 700;
-  color: rgb(113, 113, 139);
+  color: #3d535f;
+}
+
+.titleNavbar {
+  color: #3d535f;
 }
