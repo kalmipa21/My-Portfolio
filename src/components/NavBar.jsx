@@ -36,12 +36,12 @@ export default function NavBar() {
             >
               Web Projects
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to="/contacts"
               className={isActive("Contacts") ? "active mx-3" : "link mx-3"}
             >
               Contacts
-            </NavLink>
+            </NavLink> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
