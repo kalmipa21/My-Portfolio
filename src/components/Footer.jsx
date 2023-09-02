@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
-import navIcon1 from "../assets/images/nav-icon1.svg";
-import navIcon2 from "../assets/images/nav-icon2.svg";
-import navIcon3 from "../assets/images/nav-icon3.svg";
+import navIcon1 from "../assets/images/linkedin-svgrepo-com.svg";
+import navIcon2 from "../assets/images/facebook-color-svgrepo-com.svg";
+import navIcon3 from "../assets/images/instagram-1-svgrepo-com.svg";
 
 export default function Footer() {
   return (
