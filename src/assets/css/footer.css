@@ -1,0 +1,22 @@
+.footer {
+  margin-top: 10px;
+  background: linear-gradient(
+    90.21deg,
+    rgb(243, 245, 248, 1) -5.91%,
+    rgb(204, 249, 2) 130.58%
+  );
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+
+.footer img {
+  width: 30px;
+  margin-left: 10px;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #3d535f;
+  letter-spacing: 0.5px;
+}
