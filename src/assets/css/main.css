@@ -99,6 +99,7 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  filter: saturate(200%);
   animation: banner 6s linear infinite;
 }
 @keyframes banner {
@@ -166,8 +167,8 @@ a:hover {
   background: #3d535f;
   color: linear-gradient(
     90.21deg,
-    rgb(243, 245, 248, 1) -5.91%,
-    rgb(204, 249, 2) 130.58%
+    rgb(243, 245, 248, 1) -10%,
+    rgb(204, 249, 2) 90%
   );
   border-color: #f3f5f8;
 }
@@ -187,10 +188,10 @@ a:hover {
   border-radius: 50%;
   position: relative;
   border-radius: 50%;
-  background-image: radial-gradient(
-    farthest-corner at 30% 150%,
-    rgb(204, 249, 2),
-    rgb(243, 245, 248)
+  background: linear-gradient(
+    90.21deg,
+    rgb(243, 245, 248, 1) -5.91%,
+    rgb(204, 249, 2) 130.58%
   );
 }
 .imgBanner {
