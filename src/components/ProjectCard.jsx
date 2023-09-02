@@ -17,12 +17,12 @@ export default function ProjectCard({
             src={imgUrl}
             alt=""
           />
-          <Card.Title className="proj-txtx">
+          <Card.Title href={demo} className="btn proj-txtx">
             <h4>{title}</h4>
             <span>{description}</span>
           </Card.Title>
         </div>
-        <Card.Text className="ps-2 text-center">{detail}</Card.Text>
+        <Card.Text className="ps-2 text-center detail-txt">{detail}</Card.Text>
         <Button className=" proj_button border-2" href={demo}>
           Let’s Check this Out!! <ArrowRightCircle size={25} />
         </Button>
