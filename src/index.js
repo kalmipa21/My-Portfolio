@@ -11,6 +11,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import "./assets/css/typography.css";
 import "./assets/css/main.css";
+import "./assets/css/project.css";
+import "animate.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

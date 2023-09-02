@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import "animate.css";
 import TrackVisibility from "react-on-screen";
 import profileImg from "../assets/images/photo for banner.png";
 
@@ -45,7 +44,7 @@ function Home() {
   };
   return (
     <Container className="banner">
-      <Row className="aligh-items-center">
+      <Row className="aligh-items-center paddingpages">
         <Col sm="12" md="5">
           <TrackVisibility className="d-flex justify-content-md-center">
             {({ isVisible }) => (

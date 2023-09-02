@@ -9,10 +9,10 @@ export default function NavBar() {
     else return pathname.includes(target);
   }
   return (
-    <Navbar expand="md" className="bg-transparent" variant="light">
+    <Navbar expand="md" className="mynavbar fixed-top" variant="light">
       <Container>
         <Navbar.Brand href="#home">
-          <h1 className=" p-0 m-0 titleNavbar">.Portfolio</h1>
+          <h1 className=" p-0 m-0 titleNavbar">.AnyaR</h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

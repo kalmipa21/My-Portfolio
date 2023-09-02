@@ -1,3 +1,3 @@
 export default function Error() {
-  return <h1>Error || Page Not Found</h1>;
+  return <h1 className="paddingpages">Error || Page Not Found</h1>;
 }

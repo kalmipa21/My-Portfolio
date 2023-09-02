@@ -54,7 +54,7 @@ export default function About() {
     },
   };
   return (
-    <Container>
+    <Container className="paddingpages">
       <Row className="pb-5 d-flex justify-content-between text-center align-items-center border-bottom">
         <Col md="3">
           <Image

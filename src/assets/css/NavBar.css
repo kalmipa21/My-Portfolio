@@ -15,3 +15,8 @@
 .titleNavbar {
   color: #3d535f;
 }
+
+.mynavbar {
+  background-color: rgb(243, 245, 248, 0.3) !important;
+  backdrop-filter: blur(50px);
+}

@@ -2,6 +2,9 @@
 * {
   box-sizing: border-box;
 }
+.paddingpages {
+  margin-top: 100px;
+}
 
 html {
   scroll-behavior: smooth;
@@ -120,6 +123,7 @@ a:hover {
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
+  position: relative;
 }
 .banner h1 {
   font-size: 50px;
@@ -136,7 +140,8 @@ a:hover {
   letter-spacing: 0.8px;
   line-height: 1.5em;
 }
-.banner button {
+.banner button,
+.proj_button {
   color: #3d535f;
   background: linear-gradient(
     90.21deg,
@@ -145,13 +150,16 @@ a:hover {
   );
   font-weight: 700;
   font-size: 20px;
-  margin-top: 60px;
   letter-spacing: 0.8px;
   border-color: #f3f5f8;
   display: flex;
   align-items: center;
 }
-.banner button:hover {
+.banner button {
+  margin-top: 60px;
+}
+.banner button:hover,
+.proj_button:hover {
   background: #3d535f;
   color: linear-gradient(
     90.21deg,
@@ -160,13 +168,15 @@ a:hover {
   );
   border-color: #f3f5f8;
 }
-.banner button svg {
+.banner button svg,
+.proj_button svg {
   font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
-.banner button:hover svg {
+.banner button:hover svg,
+.proj_button:hover svg {
   margin-left: 70px;
 }
 .banner .imgBanner img {
