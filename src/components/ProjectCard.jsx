@@ -17,9 +17,11 @@ export default function ProjectCard({
             src={imgUrl}
             alt=""
           />
-          <Card.Title href={demo} className="btn proj-txtx">
-            <h4>{title}</h4>
-            <span>{description}</span>
+          <Card.Title className="btn proj-txtx">
+            <a href={demo}>
+              <h4>{title}</h4>
+              <span>{description}</span>
+            </a>
           </Card.Title>
         </div>
         <Card.Text className="ps-2 text-center detail-txt">{detail}</Card.Text>
