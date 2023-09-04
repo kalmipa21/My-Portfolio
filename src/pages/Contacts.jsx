@@ -9,20 +9,6 @@ export default function Contacts() {
   const [message, setMessage] = useState("");
   const areAllFieldsFilled = name !== "" && email !== "" && message !== "";
 
-  // function sendButton() {
-  //   if (name && email && message) {
-  //     return (
-  //       <Button type="submit" value="Send" className="proj_button">
-  //         Get Connect! <ArrowRightCircle size={25} />
-  //       </Button>
-  //     );
-  //   } else {
-  //     <Button type="submit" value="Send" className="proj_button" disabled>
-  //       Get Connect! <ArrowRightCircle size={25} />
-  //     </Button>;
-  //   }
-  // }
-
   const form = useRef();
 
   const sendEmail = (e) => {
