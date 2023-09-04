@@ -302,6 +302,19 @@ a:hover {
   background-color: #fff;
 }
 
+/* CONTACTS PAGE */
+.form_style {
+  max-width: 800px;
+  margin-top: 30px;
+}
+.areatype {
+  background: linear-gradient(
+    90.21deg,
+    rgb(243, 245, 248, 1) -5.91%,
+    rgb(204, 249, 2) 130.58%
+  );
+}
+
 @media (max-width: 1200px) {
   .descriptiontxt::before {
     top: 10px;
