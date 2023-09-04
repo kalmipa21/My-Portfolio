@@ -19,7 +19,7 @@ const projects = [
     description: "HTML, CSS, & Javascript",
     detail: "Wedding invitation website",
     imgUrl: weddinginvt,
-    demo: "https://github.com/kalmipa21/WebUndangan.git",
+    demo: "https://web-undangan-eta.vercel.app/",
   },
   {
     title: "My Portfolio",
