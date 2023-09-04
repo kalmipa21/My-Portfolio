@@ -4,6 +4,7 @@
 }
 .paddingpages {
   margin-top: 100px;
+  margin-bottom: 60px;
 }
 
 html {
@@ -383,5 +384,8 @@ a:hover {
   .timeline-heading {
     font-size: 12px;
     font-weight: 600;
+  }
+  .paddingpages {
+    margin-bottom: 120px;
   }
 }

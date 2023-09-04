@@ -7,11 +7,11 @@ export default function Footer() {
   return (
     <footer className="footer">
       <Container>
-        <Row className="align-items-center justify-content-evenly">
-          <Col size={12} sm={4} className="text-center text-sm-start mt-2">
+        <Row className="d-flex align-items-center justify-content-center">
+          <Col size="3" sm="4" className="text-center text-sm-start mt-2">
             <h2>.AnyaR</h2>
           </Col>
-          <Col size={12} sm={4} className="text-center mt-2">
+          <Col size="3" sm="4" className="text-center text-sm-center  mt-2">
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/rifsapu/">
                 <img src={navIcon1} alt="Icon" />
@@ -24,7 +24,7 @@ export default function Footer() {
               </a>
             </div>
           </Col>
-          <Col size={12} sm={4} className="text-center text-sm-end mt-2">
+          <Col size="6" sm="4" className="text-center text-sm-end mt-2">
             <p>Copyright 2022. All Rights Reserved</p>
           </Col>
         </Row>
