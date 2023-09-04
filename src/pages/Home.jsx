@@ -4,6 +4,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import TrackVisibility from "react-on-screen";
 import profileImg from "../assets/images/photo for banner.png";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [loopNum, setLoopNum] = useState(0);
@@ -83,12 +84,11 @@ function Home() {
                   </p>
                 </div>
 
-                <Button
-                  className=" button border-2"
-                  onClick={() => console.log("connect")}
-                >
-                  Let’s Connect <ArrowRightCircle size={25} />
-                </Button>
+                <Link to="/contacts">
+                  <Button className=" button border-2">
+                    Let’s Connect <ArrowRightCircle size={25} />
+                  </Button>
+                </Link>
               </div>
             )}
           </TrackVisibility>
