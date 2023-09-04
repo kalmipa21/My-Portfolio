@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import { NavLink, useLocation } from "react-router-dom";
 
 export default function NavBar() {
+  const [showMenu, setShowMenu] = useState(false);
   const location = useLocation();
   function isActive(target) {
     const { pathname } = location;
@@ -14,8 +16,15 @@ export default function NavBar() {
         <Navbar.Brand href="#home">
           <h1 className=" p-0 m-0 titleNavbar">.AnyaR</h1>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={() => setShowMenu(!showMenu)}
+        />
+        <Navbar.Collapse
+          id="responsive-navbar-nav"
+          onClick={() => setShowMenu(!showMenu)}
+          style={{ display: showMenu ? "flex" : "none" }}
+        >
           <Nav className="ms-auto navbar-link">
             <NavLink
               to="/"
@@ -34,7 +43,7 @@ export default function NavBar() {
               to="/projects"
               className={isActive("Projects") ? "active mx-3" : "link mx-3"}
             >
-              Web Projects
+              Projects
             </NavLink>
             <NavLink
               to="/contacts"
