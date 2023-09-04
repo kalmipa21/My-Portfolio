@@ -1,8 +1,28 @@
 import { Button, Container, Form } from "react-bootstrap";
-import React, { useRef } from "react";
+import { ArrowRightCircle } from "react-bootstrap-icons";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function Contacts() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const areAllFieldsFilled = name !== "" && email !== "" && message !== "";
+
+  // function sendButton() {
+  //   if (name && email && message) {
+  //     return (
+  //       <Button type="submit" value="Send" className="proj_button">
+  //         Get Connect! <ArrowRightCircle size={25} />
+  //       </Button>
+  //     );
+  //   } else {
+  //     <Button type="submit" value="Send" className="proj_button" disabled>
+  //       Get Connect! <ArrowRightCircle size={25} />
+  //     </Button>;
+  //   }
+  // }
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -40,6 +60,7 @@ export default function Contacts() {
             placeholder="Your Name"
             name="user_name"
             className="areatype"
+            onChange={(e) => setName(e.target.value)}
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -49,6 +70,7 @@ export default function Contacts() {
             placeholder="name@example.com"
             name="user_email"
             className="areatype"
+            onChange={(e) => setEmail(e.target.value)}
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
@@ -58,10 +80,16 @@ export default function Contacts() {
             rows={3}
             name="message"
             className="areatype"
+            onChange={(e) => setMessage(e.target.value)}
           />
         </Form.Group>
-        <Button type="submit" value="Send">
-          Send
+        <Button
+          type="submit"
+          value="Send"
+          className="proj_button"
+          disabled={!areAllFieldsFilled}
+        >
+          Get Connect! <ArrowRightCircle size={25} />
         </Button>
       </Form>
     </Container>
