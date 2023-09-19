@@ -4,12 +4,19 @@ import ecommerce from "../assets/images/Projects/ecommerce.png";
 import weddinginvt from "../assets/images/Projects/wedding invitation.png";
 import appandrois from "../assets/images/Projects/apps android.jpg";
 import portfolio from "../assets/images/Projects/portfolio.png";
+import employee_manager from "../assets/images/Projects/employee_manager.png";
 
 import { Container, Row, Tab } from "react-bootstrap";
 const projects = [
   {
+    title: "Employee Manager",
+    description: "React JS, Bootstrap, ReactJS and Mockapi.io",
+    imgUrl: employee_manager,
+    demo: "https://test-equalsys.vercel.app/",
+  },
+  {
     title: "E-Commerce",
-    description: "HTML, CSS, Bootstrap, & ReactJS",
+    description: "HTML, CSS, Bootstrap, Express, NodeJS, MongoDB & ReactJS",
     detail: "Web portal selling gaming gadgets and accessories",
     imgUrl: ecommerce,
     demo: "https://fe-tokobapakmu.vercel.app/",
