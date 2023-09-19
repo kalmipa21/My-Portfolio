@@ -11,6 +11,8 @@ const projects = [
   {
     title: "Employee Manager",
     description: "React JS, Bootstrap, ReactJS and Mockapi.io",
+    detail:
+      "This an app for manage your employee such as sallary, job roles, job active, and etc",
     imgUrl: employee_manager,
     demo: "https://test-equalsys.vercel.app/",
   },
