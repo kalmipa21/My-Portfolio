@@ -5,14 +5,22 @@ import weddinginvt from "../assets/images/Projects/wedding invitation.png";
 import appandrois from "../assets/images/Projects/apps android.jpg";
 import portfolio from "../assets/images/Projects/portfolio.png";
 import employee_manager from "../assets/images/Projects/employee_manager.png";
+import companyweb1 from "../assets/images/Projects/company1.png";
 
 import { Container, Row, Tab } from "react-bootstrap";
 const projects = [
   {
+    title: "Company Website",
+    description: "CSS, React JS, and Bootstrap ",
+    detail: "This is an web about dummy company, slicing from figma comunity",
+    imgUrl: companyweb1,
+    demo: "https://company1-nine.vercel.app/",
+  },
+  {
     title: "Employee Manager",
     description: "React JS, Bootstrap, ReactJS and Mockapi.io",
     detail:
-      "This an app for manage your employee such as sallary, job roles, job active, and etc",
+      "This is an app for manage your employee such as sallary, job roles, job active, and etc",
     imgUrl: employee_manager,
     demo: "https://test-equalsys.vercel.app/",
   },
