@@ -6,9 +6,17 @@ import appandrois from "../assets/images/Projects/apps android.jpg";
 import portfolio from "../assets/images/Projects/portfolio.png";
 import employee_manager from "../assets/images/Projects/employee_manager.png";
 import companyweb1 from "../assets/images/Projects/company1.png";
+import companyweb2 from "../assets/images/Projects/landing_page2.png";
 
 import { Container, Row, Tab } from "react-bootstrap";
 const projects = [
+  {
+    title: "E-Wallet",
+    description: "CSS, React JS, and Bootstrap ",
+    detail: "This is an e-wallet side project",
+    imgUrl: companyweb2,
+    demo: "https://kalmipa21-github-io.vercel.app/",
+  },
   {
     title: "Company Website",
     description: "CSS, React JS, and Bootstrap ",
