@@ -11,7 +11,7 @@ import companyweb2 from "../assets/images/Projects/landing_page2.png";
 import { Container, Row, Tab } from "react-bootstrap";
 const projects = [
   {
-    title: "E-Wallet",
+    title: "Landing Page Company",
     description: "CSS, React JS, and Bootstrap ",
     detail: "This is an e-wallet side project",
     imgUrl: companyweb2,
